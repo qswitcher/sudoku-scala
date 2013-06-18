@@ -17,15 +17,10 @@ abstract class Literal(val v : Variable) {
     this(new Variable(name))
   }
 
-
-  def checkRep = {
-
-  }
-
   def negates(literal : Literal) = negation == literal
 
   override def equals(o : Any) = this == o
 
-  abstract def isPositive
+  def isPositive
 
 }

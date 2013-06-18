@@ -9,15 +9,6 @@ package sat.formula
  */
 
 class Clause(val literals : Array[Literal] = Array()) {
-  checkRep(literals)
-
-  def checkRep(ls : Array[Literal]) = {
-    assert(ls != null, "Clause, Rep invariant: literals non-null")
-    if(!ls.isEmpty){
-      assert(ls.head != null, "Clause, Rep invariant: no null elements")
-    }
-    ls
-  }
 
   def this(literal : Literal) = this(Array(literal))
 
